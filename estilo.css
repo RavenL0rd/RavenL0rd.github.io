@@ -1,0 +1,130 @@
+
+*{
+  font-family: abel;
+}
+
+body {
+  background: yellow;
+}
+
+.imagen-o-infantil,
+.imagen-obesidad {
+  width: 50%;
+  float: center;
+  display: block;
+  margin: auto;
+}
+video {
+  width: 40%;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  outline: thick double orange;
+}
+
+h1 {
+  font-size: 5em;
+    font-family: 'Lobster', cursive;
+
+    color: white;
+    background-color: green;
+    margin: 0;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+
+    text-align: center;
+    text-shadow: 0.5em 0.2em darkgreen;
+
+    border-radius: 10px;
+    border: 6px dashed darkgreen;
+}
+[descripcion= "descripcion"]{
+    font-family: 'lobster', cursive;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
+    background-color: seagreen;
+    padding: 0.5em;
+    margin: 0;
+    border: 6px dashed darkgreen;
+    border-top: 0;
+    border-radius: 10px;
+}
+header {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1em;
+  margin-top: 1em;
+  box-shadow: 0.2em 0.3em gray;
+   position: sticky;
+        top: 0px;
+        z-index: 500;
+}
+[img="usuario"], [img ="settings"]{
+    width: 2em;
+    margin: 0.5em;
+    float: right;
+
+  }
+
+nav ul li {
+  padding: 0.2em;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h3 {
+  background: rgba(255, 140, 0, 1.0);
+  padding: 1em 0 1em 1em;
+  border-radius: 0.5em;
+  border: 0.2em dashed orange;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h3:hover {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h4 {
+  font-size: 1.2em;
+  background: lightgray;
+  padding: 0.5em 0 0.5em 0.5em;
+  border-radius: 0.7em;
+}
+
+p,
+.letra {
+  font-size: 1.2em;
+}
+  @media(max-width: 600px){
+    h1{
+      padding: 0;
+    }
+  .imagen-o-infantil,
+  .imagen-obesidad,video{
+    width: 100%;
+  }
+  [img="usuario"], [img ="settings"]{
+    width: 3em;
+    margin: 0.5;
+    float: right;
+
+  }
+}
+  @media(min-width:600px) and (max-width: 900px){
+    .imagen-o-infantil,
+  .imagen-obesidad,video{
+    width: 80%;
+  }
+}

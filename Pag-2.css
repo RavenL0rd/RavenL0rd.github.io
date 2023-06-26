@@ -1,8 +1,4 @@
-*{
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-}
+
 
 body{
     background: white;
@@ -17,29 +13,28 @@ border: 1px solid black;
 box-shadow: 0 0 10px 1px black;
 }
 
-header{
-    background: white;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    line-height: 100px;
-    color: black;
-    border-bottom: 3px solid black;
+header {
+  background: white;
+  border-radius: 1em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  box-shadow: 0.2em 0.3em gray;
+   position: sticky;
+        top: 0;
+        z-index: 500;
 }
-
-nav{
-    background: lightblue;
-    height: 50px;
-    border-bottom: 1px solid black;
-}
-
-nav ul li{
+[img="home"], [img ="usuario"]{
+    width: 2.5em;
+    margin: 0;
     float: left;
-    list-style: none;
-    margin: 10px;
-    line-height: 30px;
-}
 
+  }
+ 
+  nav ul li {
+  padding: 0.2em;
+  display: inline-block;
+  margin-right: 10px;
+}
 .clearfix{
     clear: both;
 }
@@ -48,14 +43,13 @@ nav ul li{
     float: left;
     width: 80%;
     background: white;
-    min-height: 470px;
 }
 
 aside{
     float: right;
     width: calc(20% - 20px);
     background: yellow;
-    min-height: 470px;
+    height: 470px;
     padding: 10px;
 }
 
@@ -70,6 +64,8 @@ aside{
 }
 h1{
     text-shadow: 0 0 20px 1px black;
+    text-align: center;
+    font-size: 3em;
     
 }
     p{
@@ -80,12 +76,18 @@ h2{
     color: black;
     font-size: 1em;
 }
-@media(max-width: 426px){
-    #content{
-        display: flex;
-    }
-    h1{
-        font-size: 80px;
+@media(max-width: 960px){
+
+    aside{
+    float: left;
+    width: calc(91%);
+    background: yellow;
+    height: 100%;
+    padding: 10px;
     }
 }
-
+@media(max-width: 382px){
+    h1{
+        font-size: 2em;
+    }
+}
